@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+:root {
+    --bg-color: hsl(210, 46%, 95%);
+
+    --card1-color: hsl(263, 55%, 52%);
+    --card2-color: hsl(217, 19%, 35%);
+    --card3-color: hsl(219, 29%, 14%);
+    --card4-color: hsl(0, 0%, 100%);
+
+    --font-color: hsl(0, 0%, 81%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    max-height: 100vh;
+    margin: 7.5em;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1em;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    padding: 2em;
+    z-index: 1;
+    color: white;
+}
+
+section h2,
+section h3,
+section p {
+    font-weight: 500;
+    font-size: 0.815rem;
+}
+
+section h1 {
+    font-weight: 600;
+    font-size: 1.375rem;
+
+    z-index: 3;
+}
+
+
+section h3 {
+    opacity: 0.5;
+}
+
+section p {
+    opacity: 0.7;
+}
+
+.card-4 {
+    color: black;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.profile img {
+    width: 2.25em;
+    border-radius: 999px;
+}
+
+.profile-name {
+
+}
+
+.card-1 {
+    background-color: var(--card1-color);
+    grid-column: span 2;
+    position: relative;
+}
+
+.card-1::after {
+    content: url(images/bg-pattern-quotation.svg);
+    position: absolute;
+    top: 0;
+    right: 15%;
+    z-index: 2;
+}
+
+.card-2 {
+    background-color: var(--card2-color);
+}
+
+.card-3 {
+    background-color: var(--card3-color);
+    grid-column: span 2;
+}
+
+.card-4 {
+    background-color: var(--card4-color);
+}
+
+.span-2-row {
+    grid-column: 4 / 5;
+    grid-row: 1 / 3;
+}
