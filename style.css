@@ -139,6 +139,7 @@ section p {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, min-content);
         width: 95%;
+        gap: 1em;
     }
 
     .card-4:last-of-type {
