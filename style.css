@@ -31,7 +31,7 @@ main {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, min-content);
-    gap: 1em;
+    gap: 2em;
 }
 
 section {
